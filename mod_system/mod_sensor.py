@@ -7,9 +7,14 @@ def freq_get():
     return list_freq
 
 def sen_get():
-
-    sensors_read = subprocess.getoutput('sensors -u -j -A')
-    sensors_read = dict(json.loads(sensors_read))
+    try: 
+        sensors_read = subprocess.getoutput('sensors -u -j -A')
+        sensors_read = dict(json.loads(sensors_read))
+    except json.JSONDecodeError as Error:
+        print(Error)
+        sensors_read = None
+        exit(-1)
+        
     return sensors_read
 
 
