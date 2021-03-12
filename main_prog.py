@@ -1,14 +1,9 @@
 #!/usr/bin/env python3
-from os.path import dirname, realpath, join
-import sys
+
 import mod_visual.mod_visual_obj
 from mod_visual.mod_visual import Marco
 from mod_system.mod_sensor import freq_get, get_sensors_data, sen_get
 
-Dir_prog = dirname(realpath(__file__))
-for j in ['mod_system', 'mod_visual']:
-    Dir_files = (join(Dir_prog, j))
-    sys.path.append(Dir_files)
 
 if __name__ == '__main__':
     sensor_names = sen_get()
