@@ -82,7 +82,7 @@ class Menu():
         button.grid(row = 1, column = 2)
         """
 
-        print(NotImplemented)
+        raise NotImplemented
 
         return None
 
