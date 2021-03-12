@@ -2,18 +2,13 @@ import tkinter as tk
 from tkinter import ttk
 from mod_visual.mod_visual_obj import Scrollbar, Menu
 from time import time, strftime
-from os.path import dirname, abspath, join
-import sys
-
-Dir_prog = dirname(abspath(__file__))
-sys.path.append(Dir_prog)
 
 
 class Ventana():
     def __init__(self, title = 'System Monitor'):
         self.master = tk.Tk()
         self.master.title(title)
-        icon = tk.PhotoImage(file = Dir_prog+'/icono_sys_mon.ico')
+        icon = tk.PhotoImage(file = 'mod_visual/icono_sys_mon.ico')
         self.master.iconphoto(False, icon)
         self.master.resizable(False, False)
         self.menu = Menu(self.master)
