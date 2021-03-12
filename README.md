@@ -6,6 +6,8 @@ For GNU/Linux.
 
 # Some technical comments.
 
+-Depends on lm-sensors to work.  
+  
 -Visual interface 'tkinter'.  
 -Grabs data direct from STDOUT.  
 -Default refresh rate 1000ms to reduce overhead.    
