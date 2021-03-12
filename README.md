@@ -12,7 +12,8 @@ For GNU/Linux.
 
 # Work in progress.
 
--Tweak the interface form and color style.
--Add settings window; user change max values and actions for critical values.
+-Tweak the interface form and color style.  
+-Settings window; user change max values and actions for critical values.
+
 
 
